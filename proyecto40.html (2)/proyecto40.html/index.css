@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFC107; /* Color dorado del logo */
+}
+
+.btn-pronosticos {
+    background-color: #C62828; /* Color rojo del botón Pronósticos Deportivos */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-pronosticos:hover {
+    background-color: #D32F2F;
+}

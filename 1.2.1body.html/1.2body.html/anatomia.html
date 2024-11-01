@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="anatomia.css">
+<link rel="stylesheet" href="estiloboton.css">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .header {
+        background-color: #87CEEB;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        height: 100PX;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+     
+    }
+    .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+    .logo-text {
+        font-size: 48px;
+     font-weight: bold;
+     letter-spacing: 0.1em;
+      text-align: center;
+      font-family: 'Times New Roman', serif;
+    }
+    .nav {
+        display: flex;
+        margin-left: auto;
+         
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: background-color 0.3s;
+        margin: 50px;
+        background-color: rgb(0, 85, 255);
+        border-radius: 5PX;
+        
+    }
+    .nav a:hover {
+        background-color: #575757;
+    }
+    .button {
+        background-color: #bb02cc;
+        ;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 20px;
+        transition: background-color 0.3s;
+        width: ;
+    }
+    .button:hover {
+        background-color: #b71c1c;
+    }
+    .image-container {
+          width: 1000px;
+          height: 250px;
+          position: relative;
+      }
+      .image-container img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 1s;
+          border-radius: 5px;
+        }
+      .image-container img.active {
+          opacity: 1;
+      }
+      
+        .bloke {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .bloke img {
+            max-width: 100%;
+            max-height: 80vh;
+        }
+        .botonomagen {
+            display: block;
+            margin: 10px auto 0;
+            padding: 10px 20px;
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+           
+        }
+  .botonabrir{
+    display: block;
+            margin: 10px auto 0;
+            padding: 10px 20px;
+            background-color: #17bb4e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+  }
+</style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="anatomia logo.png" alt="Logo">
+            <div class="logo-text">HealthSphere</div>
+        </div>
+        <div class="nav">
+            
+            <a href="morfologia.html">Morfologia</a>
+            <a href="fisiologia.html">Fisiologia</a>
+            <a href="anatomia.html">Anatomia</a>
+            <a href="histologia.html">Histologia</a>
+        </div>
+        <a href="info.html" class="button">INICIO</a>
+    </div>
+
+    <div class="container">
+        <div style="display: flex; align-items: center;">
+          <div class="image-container">
+              <img src="sistema nervioso img.jfif" alt="Imagen 1" class="active">
+              <img src="sistema inmunologico img.jfif" alt="Imagen 2">
+              <img src="sistema circulatorio img.jfif" alt="Imagen 3">
+              <img src="sistem linfatico img.jfif" alt="Imagen 4">
+              <img src="sistema reproductor img.jfif" alt="Imagen 5">
+              <img src="sistema digestivo img.jpg" alt="Imagen 6">
+              <img src="sistema esqueletico img.jfif" alt="Imagen 7">
+          </div>
+          <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.image-container img');
+            const totalImages = images.length;
+      
+            setInterval(() => {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % totalImages;
+                images[currentIndex].classList.add('active');
+            }, 3000);
+        </script>
+      
+
+   
+        
+
+    <H1 class="tituloo"><center>ANATOMIA</center></H1>
+   
+<P class="highlight">
+    La anatomía es una ciencia, rama de la biología, que estudia la estructura de los seres
+    vivos, es decir, la forma, topografía, ubicación, disposición y relación entre sí de los
+    órganos que lo componen. Se puede clasificar en anatomía descriptiva, funcional y
+    quirúrgica. La anatomía se basa en el examen descriptivo de los organismos vivos, y forma
+    parte de un grupo de ciencias básicas llamadas ciencias morfológicas (biología del
+    desarrollo, histología y antropología física), que completan su área de conocimiento. La
+    anatomía humana es una de las ciencias básicas o preclínicas de la medicina.
+    
+</P>
+</div>
+
+<h2 class=""><center>SUBDISCIPLINAS</center></h2>
+<div>
+    <H3>Anatomía macroscópica</H3>
+<P class="highlight">
+    Estudia estructuras del cuerpo visibles a simple vista.
+    -Ejemplo: La observación del corazón, sus cámaras y válvulas en un cadáver durante
+    una disección.
+   
+    </script>
+</P>
+<H3>Anatomía regiona</H3>
+<P class="highlight">
+    Se enfoca en áreas específicas del cuerpo y las relaciones entre las
+    estructuras dentro de esa región.
+    -Ejemplo: El estudio de la región abdominal, incluyendo el estómago, intestinos,
+    hígado y riñones.
+    <button onclick="openImage('aregional.jpg')"class="botonabrir">Abrir Imagen</button>
+    <div id="imageContainer" class="bloke">
+        <img id="image" src="are" alt="Imagen">
+        <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+    </div>
+    <script>
+        function openImage(src) {
+            document.getElementById('image').src = src;
+            document.querySelector('.bloke').style.display = 'block';
+        }
+
+        function closeImage() {
+            document.querySelector('.bloke').style.display = 'none';
+            document.getElementById('image').src = '';
+        }
+    </script>
+
+</P>
+
+<H3>Anatomía sistemática</H3>
+<P class="highlight">
+    Examina los sistemas del cuerpo de manera aislada, considerando su
+    estructura y función.
+    -Ejemplo: El análisis del sistema muscular, que incluye los diferentes músculos, su
+    origen, inserción y función.
+    
+    <button onclick="openImage('musculos.png')" class="botonabrir">Abrir Imagen</button>
+    <div id="imageContainer" class="bloke">
+        <img id="image" src="are" alt="Imagen">
+        <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+    </div>
+    <script>
+        function openImage(src) {
+            document.getElementById('image').src = src;
+            document.querySelector('.bloke').style.display = 'block';
+        }
+
+        function closeImage() {
+            document.querySelector('.bloke').style.display = 'none';
+            document.getElementById('image').src = '';
+        }
+    </script>
+</P>
+
+<H3>Anatomía microscópica</H3>
+<P class="highlight">
+    Se ocupa de las estructuras que no son visibles sin un microscopio.
+    -Ejemplo: El estudio de tejido muscular en un corte histológico para observar su
+    organización celular.
+    <button onclick="openImage('tejido muscular.PNG')" class="botonabrir">Abrir Imagen</button>
+    <div id="imageContainer" class="bloke">
+        <img id="image" src="are" alt="Imagen">
+        <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+    </div>
+    <script>
+        function openImage(src) {
+            document.getElementById('image').src = src;
+            document.querySelector('.bloke').style.display = 'block';
+        }
+
+        function closeImage() {
+            document.querySelector('.bloke').style.display = 'none';
+            document.getElementById('image').src = '';
+        }
+    </script>
+
+</P>
+
+<H3>Citología</H3>
+<P class="highlight">
+    Estudia las células, su estructura y funciones.
+-Ejemplo: Evaluación de células en un frotis de sangre para detectar anomalías.
+<button onclick="openImage('33.PNG')" class="botonabrir">Abrir Imagen</button>
+    <div id="imageContainer" class="bloke">
+        <img id="image" src="are" alt="Imagen">
+        <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+    </div>
+    <script>
+        function openImage(src) {
+            document.getElementById('image').src = src;
+            document.querySelector('.bloke').style.display = 'block';
+        }
+
+        function closeImage() {
+            document.querySelector('.bloke').style.display = 'none';
+            document.getElementById('image').src = '';
+        }
+    </script>
+</P>
+
+<H3>Anatomía comparada</H3>
+<P class="highlight">
+    Compara las estructuras anatómicas de diferentes especies para
+    entender su evolución.
+    -Ejemplo: Comparación de las extremidades de un ser humano, un gato y un delfín
+    para estudiar adaptaciones funcionales.
+    <button onclick="openImage('31.PNG')" class="botonabrir">Abrir Imagen</button>
+    <div id="imageContainer" class="bloke">
+        <img id="image" src="are" alt="Imagen">
+        <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+    </div>
+    <script>
+        function openImage(src) {
+            document.getElementById('image').src = src;
+            document.querySelector('.bloke').style.display = 'block';
+        }
+
+        function closeImage() {
+            document.querySelector('.bloke').style.display = 'none';
+            document.getElementById('image').src = '';
+        }
+    </script>
+</P>
+
+<H3>Anatomía funcional</H3>
+<P class="highlight">
+    Examina la relación entre la estructura de un órgano y su función.
+    -Ejemplo: Estudio de cómo la forma del alveólo pulmonar facilita el intercambio de
+    gases.
+
+</P>
+
+<H3>Anatomía clínica</H3>
+<P class="highlight">
+    Aplica el conocimiento anatómico a la práctica médica, enfocándose en
+    diagnósticos y tratamientos.
+    -Ejemplo: Uso de la anatomía para realizar una cirugía laparoscópica, donde se
+    requiere conocer la ubicación exacta de órganos internos.
+    
+
+</P>
+
+
+</P>
+
+
+<h2 class="tituloo"><CEnter>SISTEMAS DEL CUERPO HUMANO</CEnter></h2>
+
+
+
+<H3>Sistema esquelético</H3>
+<P class="highlight">
+    Proporciona estructura y soporte al cuerpo, protege los órganos
+internos y permite el movimiento en conjunto con los músculos. Está formado por huesos,
+cartílagos y articulaciones.
+
+</P>
+
+
+<H3>Sistema muscular</H3>
+<P class="highlight">
+    Permite el movimiento del cuerpo y mantiene la postura. Está
+compuesto por músculos esqueléticos, lisos y cardíacos
+    
+
+</P>
+
+<H3>Sistema circulatorio</H3>
+<P class="highlight">
+    Transporta sangre, nutrientes, gases y desechos a través del
+cuerpo. Incluye el corazón, los vasos sanguíneos y la sangre
+    
+
+</P>
+
+<H3>Sistema respiratorio</H3>
+<P class="highlight">
+Se encarga de la entrada de oxígeno y la eliminación de dióxido
+de carbono. Compuesto por las vías respiratorias, los pulmones y los músculos
+respiratorios.
+    
+
+</P>
+
+<H3>Sistema digestivo</H3>
+<P class="highlight">
+Descompone los alimentos y absorbe los nutrientes necesarios
+para el cuerpo. Incluye la boca, esófago, estómago, intestinos y órganos anexos como el
+hígado y el páncreas.
+
+    
+
+</P>
+
+<H3>Sistema nervioso</H3>
+<P class="highlight">
+    Coordina las funciones del cuerpo y responde a los estímulos. Se
+divide en el sistema nervioso central (cerebro y médula espinal) y el sistema nervioso
+periférico
+    
+
+</P>
+
+<H3>Sistema endocrino</H3>
+<P class="highlight">
+    Regula procesos corporales a través de hormonas. Incluye
+    glándulas como la tiroides, las suprarrenales y el páncreas.
+     
+   
+    
+    <H3>Sistema inmunológico</H3>
+<P class="highlight">
+    Defiende al cuerpo contra infecciones y enfermedades.
+Compuesto por células, tejidos y órganos, como los linfáticos y el bazo
+    
+
+</P>
+
+<H3>Sistema linfático</H3>
+<P class="highlight">
+    Ayuda a mantener el equilibrio de fluidos en el cuerpo y participa en
+la respuesta inmunitaria. Incluye vasos linfáticos, ganglios linfáticos y el bazo.
+    
+
+</P>
+
+<H3>Sistema urinario</H3>
+<P class="highlight">
+    Elimina desechos y regula el equilibrio de líquidos y electrolitos.
+    Compuesto por los riñones, uréteres, vejiga y uretra.
+    
+
+</P>
+
+<H3>Sistema reproductor</H3>
+<P class="highlight">
+    Permite la reproducción y la producción de hormonas sexuales.
+En los hombres incluye los testículos y en las mujeres los ovarios, entre otros órganos.
+    
+
+</P>
+
+</P>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

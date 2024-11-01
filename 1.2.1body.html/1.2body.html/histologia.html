@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morfologia</title>
+    <link rel="stylesheet" href="histologia.css">
+    <link rel="stylesheet" href="estiloboton.css">
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+      }
+      .header {
+          background-color: #87CEEB;
+          color: white;
+          display: flex;
+          align-items: center;
+          padding: 10px 20px;
+          height: 100PX;
+      }
+      .logo {
+          display: flex;
+          align-items: center;
+       
+      }
+      .logo img {
+          height: 50px;
+          margin-right: 10px;
+      }
+      .logo-text {
+          font-size: 48px;
+       font-weight: bold;
+       letter-spacing: 0.1em;
+        text-align: center;
+        font-family: 'Times New Roman', serif;
+      }
+      .nav {
+          display: flex;
+          margin-left: auto;
+      }
+      .nav a {
+          color: white;
+          text-decoration: none;
+          padding: 10px 15px;
+          transition: background-color 0.3s;
+          margin: 50px;
+          background-color: rgb(0, 85, 255);
+          border-radius: 5PX;
+      }
+      .nav a:hover {
+          background-color: #575757;
+      }
+      .button {
+          background-color: #d32f2f;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          margin-left: 20px;
+          transition: background-color 0.3s;
+      }
+      .button:hover {
+          background-color: #b71c1c;
+      }
+      .image-container {
+            width: 2000px;
+            height: 300px;
+            position: relative;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s;
+            border-radius: 5px;
+          }
+        .image-container img.active {
+            opacity: 1;
+        }
+        .bloke {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .bloke img {
+            max-width: 100%;
+            max-height: 80vh;
+        }
+        .botonomagen {
+            display: block;
+            margin: 10px auto 0;
+            padding: 10px 20px;
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+           
+        }
+  .botonabrir{
+    display: block;
+            margin: 10px auto 0;
+            padding: 10px 20px;
+            background-color: #17bb4e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+  }
+   
+  
+  
+  </style>
+</head>
+<body>
+  <div class="header">
+      <div class="logo">
+          <img src="anatomia logo.png" alt="Logo">
+          <div class="logo-text">HealthSphere</div>
+      </div>
+      <div class="nav">
+          
+          <a href="morfologia.html">Morfologia</a>
+          <a href="fisiologia.html">Fisiologia</a>
+          <a href="anatomia.html">Anatomia</a>
+          <a href="histologia.html">Histologia</a>
+      </div>
+      <a href="info.html" class="button">INICIO</a>
+  </div>
+
+    <body>
+      <div class="container">
+        <div style="display: flex; align-items: center;" >
+          <div class="image-container">
+            <img src="histocopi.png" alt="Imagen 1" class="active">
+            <img src="histologia 1.jpg" alt="Imagen 2">
+            <img src="histologia 2.jpg" alt="Imagen 3">
+            <img src="histologia 3.jpg" alt="Imagen 4">
+        </div>
+        <script>
+          let currentIndex = 0;
+          const images = document.querySelectorAll('.image-container img');
+          const totalImages = images.length;
+  
+          setInterval(() => {
+              images[currentIndex].classList.remove('active');
+              currentIndex = (currentIndex + 1) % totalImages;
+              images[currentIndex].classList.add('active');
+          }, 3000);
+      </script>
+        <h1><center>HISTOLOGIA</center></h1>
+  
+          
+          <p class="highlight">
+            La histología es la rama de la biología que estudia los tejidos biológicos. Se centra en la
+estructura y organización de las células y tejidos en organismos multicelulares. Este campo
+es esencial para entender la función normal y patológica de los tejidos en los diferentes
+órganos del cuerpo.
+La histología se divide en varios tipos, cada uno enfocado en el estudio de diferentes tejidos
+y estructuras.
+
+            </p>
+  </div>
+
+          <h2><CEnter>TIPOS DE HISTOLOGIA</CEnter></h2>
+
+          
+  
+  <h3>Histología general</h3>
+  <p class="highlight">
+  Estudia la estructura y organización de los tejidos en general.
+-Ejemplo: Análisis de la organización de tejidos epiteliales en un órgano.
+  </p>
+
+  <h3>Histología del tejido epitelial</h3>
+  <p class="highlight">
+    Se centra en los tejidos que cubren superficies y
+    órganos, y que forman glándulas.
+    - Ejemplo: Estudio del epitelio estratificado plano en la piel.
+    <button onclick="openImage('101.jpg')"class="botonabrir">Abrir Imagen</button>
+    <div id="imageContainer" class="bloke">
+        <img id="image" src="are" alt="Imagen">
+        <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+    </div>
+    <script>
+        function openImage(src) {
+            document.getElementById('image').src = src;
+            document.querySelector('.bloke').style.display = 'block';
+        }
+    
+        function closeImage() {
+            document.querySelector('.bloke').style.display = 'none';
+            document.getElementById('image').src = '';
+        }
+    </script>
+    
+  
+  </p>
+
+  <h3>Histología del tejido conectivo</h3>
+  <p class="highlight">
+    Examina los tejidos que sostienen y unen otras
+estructuras del cuerpo.
+-Ejemplo: Observación del tejido adiposo y su función en el almacenamiento de
+energía.
+<button onclick="openImage('101.jpg')"class="botonabrir">Abrir Imagen</button>
+<div id="imageContainer" class="bloke">
+    <img id="image" src="are" alt="Imagen">
+    <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+</div>
+<script>
+    function openImage(src) {
+        document.getElementById('image').src = src;
+        document.querySelector('.bloke').style.display = 'block';
+    }
+
+    function closeImage() {
+        document.querySelector('.bloke').style.display = 'none';
+        document.getElementById('image').src = '';
+    }
+</script>
+
+</p>
+
+  <h3>Histología del tejido muscular</h3>
+  <p class="highlight">
+    Analiza los tipos de tejidos responsables del
+    movimiento.
+    -Ejemplo: Estudio del músculo esquelético y sus características estriadas.
+  </p>
+
+  <h3>Histología del tejido nervioso</h3>
+  <p class="highlight">
+    Se ocupa de la estructura y función de las neuronas y
+células gliales.
+-Ejemplo: Observación de la estructura de una neurona en el sistema nervioso central.
+  </p>
+
+  <h3>Histología de órganos específicos</h3>
+  <p class="highlight">
+    Investiga la composición histológica de órganos
+    particulares.
+    -Ejemplo: Estudio de la histología del hígado y sus hepatocitos.
+  </p>
+
+  <h3>Histología patológica</h3>
+  <p class="highlight">
+    Se enfoca en los cambios en los tejidos causados por
+enfermedades.
+-Ejemplo: Análisis de biopsias para detectar cáncer.
+<button onclick="openImage('101.jpg')"class="botonabrir">Abrir Imagen</button>
+<div id="imageContainer" class="bloke">
+    <img id="image" src="are" alt="Imagen">
+    <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+</div>
+<script>
+    function openImage(src) {
+        document.getElementById('image').src = src;
+        document.querySelector('.bloke').style.display = 'block';
+    }
+
+    function closeImage() {
+        document.querySelector('.bloke').style.display = 'none';
+        document.getElementById('image').src = '';
+    }
+</script>
+
+</p>
+<h2><center>TEMAS HISTOLOGICOS</center></h2>
+
+
+  <h3>Histología óptica</h3>
+  <p class="highlight">
+    La histología óptica se refiere al uso de microscopios ópticos para examinar y analizar las
+estructuras de los tejidos. Este método permite visualizar las características morfológicas de
+las células y tejidos mediante la luz visible. Los preparados histológicos se tiñen para
+resaltar diferentes componentes celulares.
+Ejemplo: Uso de colorantes como la hematoxilina y eosina para observar la
+diferenciación de tejidos en un corte de muestra
+  </p>
+
+
+  <h3>Histología microscópica</h3>
+  <p class="highlight">
+    La histología microscópica se centra en el estudio de las estructuras celulares y tisulares
+utilizando microscopía, no solo óptica, sino también electrónica (como la microscopía
+electrónica de transmisión y de barrido). Este enfoque permite un análisis más detallado de
+las organelas y estructuras subcelulares.
+Ejemplo: Observación de las mitocondrias en un corte de tejido mediante microscopía
+electrónica para estudiar su morfología y función.
+
+  </p>
+
+
+  <h3>Histología técnica</h3>
+  <p class="highlight">
+    La histología técnica abarca los métodos y procedimientos utilizados para preparar
+muestras de tejido para su análisis. Esto incluye la fijación, deshidratación, inclusión, corte y
+tinción de las muestras. Estos pasos son cruciales para preservar la arquitectura tisular y
+facilitar su observación.
+Ejemplo: Proceso de fijación de una muestra de tejido con formaldehído seguido de
+inclusión en parafina para obtener cortes delgados que se pueden observar bajo el
+microscopio
+  </p>
+
+  
+
+ 
+ 
+
+   </div>
+  
+  
+    </body>
+
+
+
+
+
+
+
+
+
+
+

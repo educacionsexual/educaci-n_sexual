@@ -1,0 +1,59 @@
+
+.button-wrapper {
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px; 
+ 
+    border-radius: 10px;
+    background-color: #fffffffd; 
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
+.button-container button {
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(204, 102, 0)
+    transition: background-color 0.3s ease; 
+    border-radius: 5px; 
+    width: 150px; 
+}
+
+.button-container button:hover {
+    background-color: rgb(216, 28, 28, 0.5); 
+}
+
+.button-blue {
+    background-color: #2a6cbf;;
+}
+
+.button-green {
+    background-color: #2a6cbf;;
+}
+
+.button-purple {
+    background-color: #2a6cbf;;
+}
+
+.button-orange {
+    background-color: #2a6cbf;;
+}
+
+.button-red {
+    background-color: #2a6cbf;;
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morfologia</title>
+    <link rel="stylesheet" href="morfologia.css">
+    <link rel="stylesheet" href="estiloboton.css">
+   
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #87CEEB;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            height: 100PX;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+         
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            font-size: 48px;
+         font-weight: bold;
+         letter-spacing: 0.1em;
+          text-align: center;
+          font-family: 'Times New Roman', serif;
+        }
+        .nav {
+            display: flex;
+            margin-left: auto;
+             
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+            margin: 50px;
+            background-color: rgb(0, 85, 255);
+            border-radius: 5PX;
+            
+        }
+        .nav a:hover {
+            background-color: #575757;
+        }
+        .button {
+            background-color: #94067c;
+            ;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 20px;
+            transition: background-color 0.3s;
+            width: ;
+        }
+        .button:hover {
+            background-color: #b71c1c;
+        }
+        .image-container {
+              width: 1500px;
+              height: 250px;
+              position: relative;
+          }
+          .image-container img {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0;
+              transition: opacity 1s;
+              border-radius: 5px;
+            }
+          .image-container img.active {
+              opacity: 1;
+          }
+          .bloke {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .bloke img {
+            max-width: 100%;
+            max-height: 80vh;
+        }
+        .botonomagen {
+            display: block;
+            margin: 10px auto 0;
+            padding: 10px 20px;
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+           
+        }
+  .botonabrir{
+    display: block;
+            margin: 10px auto 0;
+            padding: 10px 20px;
+            background-color: #17bb4e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+  }
+   
+   </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="anatomia logo.png" alt="Logo">
+            <div class="logo-text">HealthSphere</div>
+        </div>
+        <div class="nav">
+            
+            <a href="morfologia.html">Morfologia</a>
+            <a href="fisiologia.html">Fisiologia</a>
+            <a href="anatomia.html">Anatomia</a>
+            <a href="histologia.html">Histologia</a>
+        </div>
+        <a href="info.html" class="button">INICIO</a>
+    </div>
+  
+    <div class="container">
+  <div style="display: flex; align-items: center;">
+    <div class="image-container">
+        <img src="morfologiapro2.jfif" alt="Imagen 1" class="active">
+        <img src="morfologiapro1.jfif" alt="Imagen 2">
+        <img src="morfologiapro3.jfif" alt="Imagen 3">
+        <img src="morfologiapro4.jfif" alt="Imagen 4">
+    </div>
+    <script>
+      let currentIndex = 0;
+      const images = document.querySelectorAll('.image-container img');
+      const totalImages = images.length;
+
+      setInterval(() => {
+          images[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % totalImages;
+          images[currentIndex].classList.add('active');
+      }, 3000);
+  </script>
+
+<h1><center>MORFOLOGIA</center></h1>
+  <p class="highlight">
+    La morfología humana es la rama de la biología que estudia la forma, estructura y
+organización del cuerpo humano y sus partes. Se centra en las características físicas de los
+organismos, abarcando desde las dimensiones y proporciones de los diferentes sistemas
+hasta la anatomía de los órganos y tejidos.
+
+
+  </p>
+
+
+
+
+
+</div>
+
+<h2><center>FUNCIONES DE LA MORFOLOGIA HUMANA</center></h2>
+
+
+<h3>Entender la salud y la enfermedad</h3>
+  <p class="highlight">
+    La morfología es fundamental en medicina para
+identificar y comprender condiciones patológicas. Los cambios en la forma o estructura de
+un órgano pueden ser indicativos de enfermedad.
+  </p>
+
+  <h3>Guía en intervenciones médicas</h3>
+  <p class="highlight">
+    Es esencial para cirujanos y médicos en procedimientos
+que requieren un conocimiento preciso de la anatomía, como cirugías y tratamientos.
+
+  </p>
+
+  <h3>Educación y formación profesional</h3>
+  <p class="highlight">
+    Es una parte crucial de la formación en medicina,
+enfermería y otras áreas de la salud, ya que proporciona los conocimientos necesarios para
+el diagnóstico y tratamiento de enfermedades.
+  </p>
+
+  <h3>Investigación científica</h3>
+  <p class="highlight">
+    La morfología humana permite avances en campos como la
+genética, la biología celular y la antropología, ayudando a entender aspectos evolutivos y
+funcionales del ser humano.
+  </p>
+
+<h2><center>TIPOS DE MORFOLOGIA</center></h2>
+
+
+
+  <h3>Morfología descriptiva</h3>
+  <p class="highlight">
+    Se centra en la observación y descripción de las formas y estructuras del
+cuerpo humano, sin entrar en los mecanismos de desarrollo o evolución.
+Ejemplo: Estudio de la forma del cráneo humano, que puede variar en tamaño, forma y
+características entre diferentes poblaciones.
+   
+   
+<button onclick="openImage('25.jpeg')"class="botonabrir">Abrir Imagen</button>
+<div id="imageContainer" class="bloke">
+    <img id="image" src="are" alt="Imagen">
+    <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+</div>
+<script>
+    function openImage(src) {
+        document.getElementById('image').src = src;
+        document.querySelector('.bloke').style.display = 'block';
+    }
+
+    function closeImage() {
+        document.querySelector('.bloke').style.display = 'none';
+        document.getElementById('image').src = '';
+    }
+</script>
+
+  
+</p>
+
+  <h3>Morfología funcional</h3>
+  <p class="highlight">
+    Examina cómo la forma de los órganos y estructuras del cuerpo humano se
+relaciona con su función. Analiza cómo la forma está adaptada para cumplir funciones
+específicas.
+Ejemplo: El diseño del corazón, con sus aurículas y ventrículos, que permite un flujo
+eficiente de sangre a través del cuerpo, adaptado a las necesidades del sistema circulatorio
+<button onclick="openImage('101.jpg')"class="botonabrir">Abrir Imagen</button>
+<div id="imageContainer" class="bloke">
+    <img id="image" src="are" alt="Imagen">
+    <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+</div>
+<script>
+    function openImage(src) {
+        document.getElementById('image').src = src;
+        document.querySelector('.bloke').style.display = 'block';
+    }
+
+    function closeImage() {
+        document.querySelector('.bloke').style.display = 'none';
+        document.getElementById('image').src = '';
+    }
+</script>
+
+
+</p>
+
+  <h3>Morfología comparativa</h3>
+  <p class="highlight">
+    Compara las estructuras del cuerpo humano con las de otros organismos
+    para entender similitudes y diferencias, así como relaciones evolutivas.
+    Ejemplo: Comparar las extremidades de los humanos con las de los primates o de los
+    mamíferos marinos, mostrando cómo han evolucionado para adaptarse a diferentes
+    ambientes y funciones.
+    <button onclick="openImage('101.jpg')"class="botonabrir">Abrir Imagen</button>
+    <div id="imageContainer" class="bloke">
+        <img id="image" src="are" alt="Imagen">
+        <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+    </div>
+    <script>
+        function openImage(src) {
+            document.getElementById('image').src = src;
+            document.querySelector('.bloke').style.display = 'block';
+        }
+    
+        function closeImage() {
+            document.querySelector('.bloke').style.display = 'none';
+            document.getElementById('image').src = '';
+        }
+    </script>
+    
+  </p>
+
+  <h3>Morfología del desarrollo</h3>
+  <p class="highlight">
+    Estudia cómo las estructuras del cuerpo humano se forman y desarrollan
+desde la etapa embrionaria hasta la adultez, analizando los cambios a lo largo de la vida.
+Ejemplo: El desarrollo del sistema nervioso, que comienza como un tubo neural en el
+embrión y se diferencia en el cerebro y la médula espinal.
+  </p>
+
+  <h3> Morfología patológica</h3>
+  <p class="highlight">
+    Se enfoca en los cambios morfológicos que ocurren en los tejidos y
+    órganos debido a enfermedades o condiciones patológicas. Es crucial para el diagnóstico
+    médico.
+    Ejemplo: Análisis de tumores en tejidos, donde se observan cambios en la forma y
+    estructura celular que indican malignidad o benignidad.
+  </p>
+
+  <h3>Morfología antropométrica</h3>
+  <p class="highlight">
+    Se ocupa de medir las dimensiones y proporciones del cuerpo humano.
+Utiliza estas medidas para evaluar el crecimiento, la salud y la adaptación a diferentes
+entornos.
+Ejemplo: Estudio de las proporciones corporales en una población específica, como el
+índice de masa corporal (IMC) para evaluar la obesidad.
+  </p>
+
+  <h3>Morfología osteológica</h3>
+  <p class="highlight">
+    Específica para el estudio de los huesos y el sistema esquelético. Analiza la
+forma y estructura de los huesos y su relación con la función del cuerpo.
+Ejemplo: El estudio del esqueleto humano para entender la variabilidad en la forma del
+fémur y su relación con diferentes tipos de actividad física.
+<button onclick="openImage('101.jpg')"class="botonabrir">Abrir Imagen</button>
+<div id="imageContainer" class="bloke">
+    <img id="image" src="are" alt="Imagen">
+    <button id="closeButton" class="botonomagen" onclick="closeImage()">Cerrar</button>
+</div>
+<script>
+    function openImage(src) {
+        document.getElementById('image').src = src;
+        document.querySelector('.bloke').style.display = 'block';
+    }
+
+    function closeImage() {
+        document.querySelector('.bloke').style.display = 'none';
+        document.getElementById('image').src = '';
+    }
+</script>
+
+</p>
+
+
+  
+
+
+</body>
+</html>

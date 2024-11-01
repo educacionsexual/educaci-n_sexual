@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="info.css">
+<link rel="stylesheet" href="estiloboton.css">
+<style>
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+  }
+  .header {
+      background-color: #87CEEB;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      height: 100PX;
+  }
+  .logo {
+      display: flex;
+      align-items: center;
+   
+  }
+  .logo img {
+      height: 50px;
+      margin-right: 10px;
+  }
+  .logo-text {
+      font-size: 48px;
+   font-weight: bold;
+   letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+  }
+  .nav {
+      display: flex;
+      margin-left: auto;
+       
+  }
+  .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: background-color 0.3s;
+      margin: 50px;
+      background-color: #21295C;
+      border-radius: 5PX;
+      
+  }
+  .nav a:hover {
+      background-color: #575757;
+  }
+  .button {
+      background-color: #94067c;
+      ;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-left: 20px;
+      transition: background-color 0.3s;
+      width: ;
+  }
+  .button:hover {
+      background-color: #b71c1c;
+  }
+  .image-container {
+        width: 1500px;
+        height: 200px;
+        position: relative;
+    }
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s;
+        border-radius: 5px;
+      }
+    .image-container img.active {
+        opacity: 1;
+    }
+</style>
+
+
+  
+
+</head>
+
+
+
+
+<body>
+  <div class="header">
+    <div class="logo">
+        <img src="anatomia logo.png" alt="Logo">
+        <div class="logo-text">HealthSphere</div>
+    </div>
+    <div class="nav">
+        
+        <a href="morfologia.html">Morfologia</a>
+        <a href="fisiologia.html">Fisiologia</a>
+        <a href="anatomia.html">Anatomia</a>
+        <a href="histologia.html">Histologia</a>
+    </div>
+    <a href="info.html" class="button">INICIO</a>
+</div>
+
+  <body>
+    <div class="container">
+      <div style="display: flex; align-items: center;" >
+        <div class="image-container">
+          <img src="histocopi.png" alt="Imagen 1" class="active">
+          <img src="histologia 1.jpg" alt="Imagen 2">
+          <img src="histologia 2.jpg" alt="Imagen 3">
+          <img src="histologia 3.jpg" alt="Imagen 4">
+      </div>
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.image-container img');
+        const totalImages = images.length;
+
+        setInterval(() => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].classList.add('active');
+        }, 3000);
+    </script>
+
+<h1><center>HealthSphere</center></h1>
+<P class="highlight">
+ 
+  "Desvelando los misterios del cuerpo humano: Un viaje a través de la anatomía, fisiología, histología y morfología" Bienvenido a un nuevo mundo, un pequeño rincon lleno de diversos conocimientos. En donde podrás aprender cosas nuevas y adquirir nuevas habilidades. Acá te enseñaremos de una manera más sencilla, divertida y, con unos conceptos más detallados pero sencillos, para que puedas aprender de forma rápida y sencilla
+
+</P>
+
+
+</div>
+
+
+    
+  
+
+   
+<div class="container">      
+  
+ <h2>¿Qué encontrarás aquí?</h2>
+ 
+<p class="highlight">
+Encontraras temas como lo son: anatomía, fisiología, morfología e histología. Adicional a esto, encontraras conceptos sencillos de entender y super practicos
+en donde no se te dificultará en absoluto aprender y lograr memorizar algún conpceto
+que te beneficie.
+ 
+</p>
+
+<h2>Especificación de las 4 áreas</h2>
+
+
+<div class="container"></div>
+<div style="display: flex; align-items: center;">
+  <div class="image-container">
+      <img src="anatomia 3.webp" alt="Imagen 1" class="active">
+      <img src="fisiología humana (1).png" alt="Imagen 2">
+      <img src="fisiología humana 1.2.png" alt="Imagen 3">
+      <img src="fisiologia1.1.jpeg" alt="Imagen 4">
+  </div>
+  <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.image-container img');
+    const totalImages = images.length;
+
+    setInterval(() => {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % totalImages;
+        images[currentIndex].classList.add('active');
+    }, 3000);
+</script>
+<h3>Anatomía</h3>
+
+    <p class="highlight">
+      La anatomía es la ciencia que estudia la estructura y organización de los organismos, enfocándose en sus componentes, como órganos, tejidos y sistemas. Se divide en anatomía macroscópica, que examina estructuras visibles a simple vista, y anatomía microscópica, que analiza componentes a nivel celular. Su conocimiento es fundamental para disciplinas como la medicina, la biología y la fisioterapia, ya que permite entender el funcionamiento del cuerpo humano y sus interrelaciones.
+
+    </p>
+
+    
+      
+
+      </div>
+
+      <div style="display: flex; align-items: center;">
+        <h3>Fisiología</h3>
+        <p class="highlight">
+          La fisiología es la rama de la biología que estudia las funciones y procesos vitales de los organismos, tanto a nivel celular como de sistemas y órganos. Se centra en cómo funcionan las diferentes partes del cuerpo, cómo interactúan entre sí y cómo responden a estímulos internos y externos. La fisiología es crucial para entender aspectos como la homeostasis, el metabolismo y las respuestas del organismo a enfermedades, y es fundamental en campos como la medicina, la farmacología y la biotecnología.
+          
+        </p>
+
+        <div class="image-container">
+            <img src="fisiocopi.png" alt="Imagen 1" class="active">
+            <img src="fisiología humana (1).png" alt="Imagen 2">
+            <img src="fisiología humana 1.2.png" alt="Imagen 3">
+            <img src="fisiologia1.1.jpeg" alt="Imagen 4">
+        </div>
+        <script>
+          let currentIndex = 0;
+          const images = document.querySelectorAll('.image-container img');
+          const totalImages = images.length;
+    
+          setInterval(() => {
+              images[currentIndex].classList.remove('active');
+              currentIndex = (currentIndex + 1) % totalImages;
+              images[currentIndex].classList.add('active');
+          }, 3000);
+      </script>
+
+    
+
+      </div>
+
+      <div style="display: flex; align-items: center;">
+        <div class="image-container">
+            <img src="morfocopi.png" alt="Imagen 1" class="active">
+            <img src="morfocopi.png" alt="Imagen 2">
+            <img src="fisiología humana 1.2.png" alt="Imagen 3">
+            <img src="fisiologia1.1.jpeg" alt="Imagen 4">
+        </div>
+        <script>
+          let currentIndex = 0;
+          const images = document.querySelectorAll('.image-container img');
+          const totalImages = images.length;
+    
+          setInterval(() => {
+              images[currentIndex].classList.remove('active');
+              currentIndex = (currentIndex + 1) % totalImages;
+              images[currentIndex].classList.add('active');
+          }, 3000);
+      </script>
+
+    <h3>Morfología</h3>
+    <p class="highlight">
+      La morfología humana es el estudio de la forma y estructura del cuerpo humano, incluyendo sus características físicas y las variaciones que pueden existir entre individuos. Este campo abarca aspectos como la anatomía, la proporción de las extremidades, la conformación del rostro y la distribución de tejidos y órganos. La morfología humana es fundamental en disciplinas como la medicina, la antropología y la ergonomía, ya que proporciona información sobre el desarrollo, la salud y la adaptación del ser humano.
+      
+    </p>
+      </div>
+
+      <div style="display: flex; align-items: center;">
+        <h3>Histología</h3>
+    <p class="highlight">
+      La histología es la rama de la biología que estudia los tejidos de los organismos a nivel microscópico. Se enfoca en la composición, organización y función de las células que forman los diferentes tipos de tejidos, como epitelial, conectivo, muscular y nervioso. A través de técnicas de tinción y microscopía, la histología permite comprender cómo estos tejidos contribuyen al funcionamiento de órganos y sistemas en el cuerpo. Su estudio es esencial en campos como la medicina, la biología y la investigación biomédica.
+      
+    </p>
+        <div class="image-container">
+            <img src="histologia 4.jpg" alt="Imagen 1" class="active">
+            <img src="histologia 2.jpg" alt="Imagen 2">
+            <img src="histologia 1.jpg" alt="Imagen 3">
+            <img src="histologia 1.jpg" alt="Imagen 4">
+        </div>
+        <script>
+          let currentIndex = 0;
+          const images = document.querySelectorAll('.image-container img');
+          const totalImages = images.length;
+    
+          setInterval(() => {
+              images[currentIndex].classList.remove('active');
+              currentIndex = (currentIndex + 1) % totalImages;
+              images[currentIndex].classList.add('active');
+          }, 3000);
+      </script>
+
+    
+    
+
+      </div>
+
+
+<h2>Sobre nosotros</h2>
+<p class="highlight">
+Somos un grupo de estudiantes que busca facilitar el aprendizaje de todo aquel que 
+desee aprender un poco sobre medicina.
+Esta página es creada gracias al docente técnico que nos brindo conocimientos 
+sobre la programación, agradecemos profundamente a el ING Heiner Fauricio Jaimes Carrillo.
+Por su ardua labor, le damos un gran agradecimiento.
+
+</p>
+<p class="highlight">
+Este proyecto fue realizado por un grupo de 4 estudiantes, que pasaron por 
+una ardua formación académica y que usaron sus conocimienntos para realiar esta página, adional a esto 
+reaizaron una ardua investigación para concretar esta facilidad de acceder a un conocimiento.
+Integrantes: Rafael Steven Lerma Rojas (Mandilón), Daniel Eduardo Velásquez Carrillo, Kevin Samir Pérez Ugarriza 
+y Kevin Andrey López Arevalo (Hitler)
+
+
+
+</p>
+
+<h2>Contactanos</h2>
+<p>
+Correo electrónico: lerma4828@gmail.com / rafael.slermar@colaeropuerto.edu.co / kevin.alopeza@colaeropuerto.edu.co 
+
+<p>
+Número de celular: 3025656607 / 3214662213
+</p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

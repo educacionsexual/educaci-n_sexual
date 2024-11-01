@@ -1,0 +1,287 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado con Menú, Búsqueda y Título</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="metodos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Contenedor que agrupa menú y barra de búsqueda -->
+            <div class="menu-search-container">
+                <!-- Menú desplegable -->
+                <div class="menu-container">
+                    <button class="dropdown-btn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">INICIO</a>
+                        <a href="metodos.html">METODOS ANTICONCEPTIVOS</a>
+                        <a href="EMBARAZO.html">EMBARAZO ADOLESCENTE</a>
+                        <a href="ets.html">ETS</a>
+                        <a href="quiz.html">QUIZ</a>
+                    </div>
+                </div>
+
+                <!-- Barra de búsqueda a la derecha del menú -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+
+            <!-- Título centrado -->
+            <h1 class="titulo">Educación Sexual</h1>
+        </div>
+    </header>
+
+    <script>
+        // Mostrar/Ocultar Menú
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        });
+
+        // Cerrar el menú si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(function(dropdown) {
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        };
+    </script>
+      <div class="main-container">
+        <div class="image-container">
+            <img src="metods1.jpg" alt="Métodos anticonceptivos" >
+        </div>
+        <div class="text-container">
+            <h1>MÉTODOS ANTICONCEPTIVOS</h1>
+            <h2> ¿Qué son los métodos anticonceptivos?</h2>
+            <p>
+                Los métodos anticonceptivos son formas seguras y efectivas para prevenir un embarazo si decides tener relaciones sexuales. Existen muchas opciones diferentes, como la píldora, el condón, el parche, el anillo vaginal, el DIU (un pequeño dispositivo que se coloca dentro del útero) y el implante (una varilla pequeña que se coloca debajo de la piel del brazo).
+            </p>
+            <p>
+                Cada método tiene sus propias ventajas y desventajas, así que es importante hablar con un médico o enfermera para encontrar el que mejor se adapte a tu cuerpo y estilo de vida. Recuerda que usar un método anticonceptivo es una decisión personal, y tienes todo el derecho a informarte y tomar la mejor elección para ti.
+            </p>
+            <p>
+                Los métodos anticonceptivos son súper importantes porque te dan el control sobre tu cuerpo y tu vida. Al usar un método anticonceptivo, puedes decidir cuándo quieres tener hijos y disfrutar de tu sexualidad de manera más segura. Además, te ayudan a prevenir embarazos no planeados, lo que puede traer grandes cambios a tu vida.
+            </p>
+        </div>
+     </div>
+  <!-- Cuadro de Clasificación -->
+
+  <div class="classification-container">
+    <h2>Clasificación de Métodos Anticonceptivos</h2>
+    <div class="classification">
+        <div class="method">
+            <h3>Métodos de Barrera</h3>
+            <p>Opción popular y accesible para prevenir embarazos no deseados. Crean una barrera física que impide el paso de los espermatozoides y ofrecen protección contra enfermedades de transmisión sexual.</p>
+        </div>
+        <div class="method">
+            <h3>Métodos Definitivos</h3>
+            <p>Procedimientos médicos irreversibles que alteran de manera permanente el sistema reproductivo, impidiendo la fecundación. No requieren uso diario o regular.</p>
+        </div>
+        <div class="method">
+            <h3>Métodos de Emergencia</h3>
+            <p>Usados en situaciones excepcionales para prevenir embarazos no deseados después del acto sexual. Su eficacia depende del tiempo transcurrido desde la relación sexual.</p>
+        </div>
+        <div class="method">
+            <h3>Métodos Hormonales</h3>
+            <p>Regulan las hormonas del cuerpo femenino para impedir la ovulación, espesar el moco cervical y modificar el revestimiento del útero, reduciendo la probabilidad de fecundación e implantación.</p>
+        </div>
+    </div>
+</div>
+<h1><center>ANTICONCEPTIVOS HORMONALES</center> </h1>
+ <div class="containerpildoras">
+   
+   
+   <div class="textopildoras">
+       <h1>píldoras anticonceptivas</h1>
+         
+            <p>
+                Las píldoras anticonceptivas son un método contraceptivo hormonal oral altamente eficaz que ha revolucionado la planificación familiar. Estas pequeñas pastillas, que contienen una combinación de hormonas femeninas sintéticas o solo progestina, funcionan principalmente al prevenir la ovulación, el proceso en el que un ovario libera un óvulo cada mes. Además de prevenir el embarazo, las píldoras anticonceptivas ofrecen otros beneficios para la salud, como regular los períodos menstruales, reducir el dolor menstrual y disminuir el riesgo de ciertos tipos de cáncer. Cuando se toman correctamente, las píldoras anticonceptivas son uno de los métodos anticonceptivos más efectivos disponibles.
+            </p>
+          
+   </div>
+
+   
+
+
+ 
+  <div class="method">
+    <h3>Ventajas</h3>
+   <p>●	Alta eficacia: Cuando se toman correctamente, son uno de los métodos anticonceptivos más efectivos.</p>
+   <p>●	Reversibilidad: Si deseas quedar embarazada, al dejar de tomarlas la fertilidad vuelve rápidamente</p>
+   <p>●	Beneficios para la salud: Además de prevenir el embarazo, pueden ayudar a regular los períodos, reducir el dolor menstrual, disminuir el riesgo de ciertos tipos de cáncer (como el de ovario y endometrial) y mejorar el acné. </p>
+    
+  </div>
+  
+  <div class="method">
+    <h3>Desventajas</h3>
+   <p>●	No protegen contra las infecciones de transmisión sexual (ITS): Es necesario utilizar un preservativo adicional para protegerse de enfermedades como el VIH y la gonorrea.</p>  
+   <p>●	Efectos secundarios: Aunque son comunes, suelen ser leves y temporales. Algunos de los más frecuentes incluyen náuseas, dolor de cabeza, sensibilidad en los senos, cambios de humor y aumento de peso.</p>
+   
+   
+
+
+   </div>
+
+ </div>
+
+ 
+  <div class="containerparche">
+   <div class="textoparche">
+    <h2>Parche Anticonceptivo</h2>
+      <p>El parche anticonceptivo es un método contraceptivo hormonal muy popular que ofrece una alternativa cómoda y discreta a las píldoras. Este pequeño parche, que se  
+        adhiere a la piel, libera hormonas de manera constante durante una semana, previniendo así el embarazo. Es una opción ideal para aquellas mujeres que buscan un método anticonceptivo eficaz y fácil de usar, ya que no requiere ser tomado diariamente como las pastillas. Además de prevenir embarazos no deseados, el parche anticonceptivo puede ofrecer otros beneficios como regular el ciclo menstrual y reducir los cólicos.
+        </p>
+    </div>
+
+   <div class="method">
+    <h3>Ventajas</h3>
+     <p>●Comodidad y facilidad de uso: Solo necesitas cambiarlo una vez a la semana, lo que lo hace muy práctico para la vida diaria.</p>
+     <p>●Alta eficacia: Cuando se usa correctamente, es tan efectivo como las píldoras anticonceptivas.</p>
+     </div>
+     
+     <div class="method">
+        <h3>Desventajas</h3>
+         <p>●Efectos secundarios: Al igual que las píldoras, puede causar efectos secundarios como náuseas, dolor de cabeza, sensibilidad en los senos, cambios de humor, aumento de peso y sangrado irregular</p>
+         <p>●Riesgos: Como cualquier método hormonal, puede aumentar ligeramente el riesgo de coágulos sanguíneos, especialmente en mujeres con ciertos factores de riesgo.</p>
+
+         </p></p>
+         </div>
+    
+    
+    </div>
+ 
+    <div class="containeranillo">
+        <div class="textoanillo">
+         <h2><center>Anillo Vaginal</center></h2>
+           <p>El anillo vaginal es un método anticonceptivo hormonal discreto y eficaz que ofrece una alternativa cómoda a las píldoras. Este pequeño anillo flexible se inserta en la vagina y libera lentamente hormonas durante tres semanas, previniendo así el embarazo. Es una opción ideal para aquellas mujeres que buscan un método contraceptivo de larga duración y fácil de usar, ya que no requiere una administración diaria como las pastillas</p>
+          <p>Además de su eficacia en la prevención de embarazos no deseados, el anillo vaginal puede ofrecer otros beneficios para la salud, como regular el ciclo menstrual y reducir los cólicos.</p><p> eficacia del anillo vaginal se puede comparar con la de otros métodos hormonales como la píldora anticonceptiva. Si se utiliza de manera perfecta, es decir, sin olvidos ni expulsiones accidentales, su eficacia es muy alta, cercana al 99%. Sin embargo, en la vida real, es común olvidar cambiarlo o que se expulse accidentalmente, por lo que la eficacia típica se estima en alrededor del 91-93%. Esto significa que aproximadamente 7 de cada 100 mujeres que usan el anillo quedan embarazadas cada año.</p>
+        </div>
+     <div class="anilloventajas">
+        <div class="method">
+         <h3>Ventajas</h3>
+          <p>●Comodidad y discreción: Una vez colocado, es prácticamente imperceptible y no requiere atención diaria. Esto lo convierte en una opción muy cómoda para muchas mujeres.</p>
+          
+          <p>●Alta eficacia: Cuando se usa correctamente, es tan efectivo como otros métodos hormonales como la píldora anticonceptiva</p>
+        </div>
+          
+          <div class="method">
+             <h3>Desventajas</h3>
+              <p>●Efectos secundarios: Al igual que otros métodos hormonales, puede causar efectos secundarios como náuseas, dolor de cabeza, sensibilidad en los senos, cambios de humor, aumento de peso, sangrado irregular o manchado.</p>
+              <p>●Riesgos: Como cualquier método hormonal, puede aumentar ligeramente el riesgo de coágulos sanguíneos, especialmente en mujeres con ciertos factores de riesgo.</p>
+              </div>
+         
+     </div>   
+   </div>
+  
+   <div class="containerparche">
+    <div class="textoparche">
+     <h2>inyecciones anticonceptivas</h2>
+       <p>Las inyecciones anticonceptivas son un método hormonal muy eficaz y reversible para prevenir el embarazo. Estas inyecciones contienen hormonas que impiden la ovulación, espesan el moco cervical y alteran el revestimiento del útero, dificultando así que el espermatozoide fecunde el óvulo e implante en el útero. Son una opción popular debido a su alta eficacia y a que solo requieren una inyección cada cierto tiempo, lo que las convierte en un método muy práctico para muchas mujeres.</p>
+        <p>¿Qué tan efectiva es exactamente? Si se utiliza de manera correcta, la inyección anticonceptiva tiene una efectividad de más del 99%. Esto significa que menos de 1 de cada 100 mujeres que la usan queda embarazada en un año. Sin embargo, en la vida real, la efectividad puede ser ligeramente menor, alrededor del 94%, debido a factores como olvidos en la aplicación o cambios en el peso.</p>
+
+     </div>
+ 
+    <div class="method">
+     <h3>Ventajas</h3>
+      <p>●Alta eficacia: Es uno de los métodos anticonceptivos más efectivos cuando se utiliza correctamente</p>
+      <p>●Comodidad: Solo requiere una inyección cada uno o tres meses, lo que la hace muy práctica y reduce el riesgo de olvidos.</p>
+      <p>●	Reducción del sangrado menstrual: Muchas mujeres experimentan períodos más ligeros o incluso ausencia de menstruación, lo cual puede ser beneficioso para algunas.</p>
+      </div>
+
+      
+      <div class="method">
+         <h3>Desventajas</h3>
+          <p>●Cambios en el ciclo menstrual : Es común que se experimenten alteraciones en la menstruación, como sangrado irregular, manchado o ausencia del periodo (amenorrea), especialmente durante los primeros meses.</p>
+          <p>●Retraso en la fertilidad : Después de suspender las inyecciones, puede haber un retraso en la recuperación de la fertilidad</p>
+          </p></p>
+          </div>
+     
+     
+     </div>
+     <div class="containerparche">
+        <div class="textoparche">
+         <h2>Implante Subtermico</h2>
+           <p>El implante subdérmico es un método anticonceptivo muy eficaz y de larga duración que consiste en una pequeña varilla flexible colocada debajo de la piel del brazo</p>
+            <p> Esta varilla libera de forma constante una hormona que impide la ovulación, espesa el moco cervical y altera el revestimiento del útero, previniendo así el embarazo. Gracias a su alta eficacia y a su duración de hasta cinco años, el implante subdérmico es una opción muy popular para aquellas mujeres que buscan un método anticonceptivo seguro y a largo plazo.La tasa de efectividad del implante subdérmico es superior al 99%. Esto significa que menos de 1 de cada 100 mujeres que usan este método queda embarazada en un año</p>    
+         </div>
+     
+        <div class="method">
+         <h3>Ventajas</h3>
+          <p>●Alta eficacia: Es uno de los métodos anticonceptivos más efectivos, con una tasa de falla menor al 1%.</p>
+          <p>●Duración: Un solo implante puede proporcionar protección anticonceptiva durante 3 a 5 años, dependiendo del tipo</p>
+          <p>●Discreto: Es pequeño y se coloca debajo de la piel, por lo que es prácticamente invisible.</p>
+          <p>●Menor margen de error: A diferencia de otros métodos hormonales, como la píldora, no hay riesgo de olvidos o de que la efectividad disminuya por interacciones con otros medicamentos.</p>
+        </div>
+    
+          
+          <div class="method">
+             <h3>Desventajas</h3>
+              <p>●Cambios menstruales: Puede causar sangrados irregulares, manchado o ausencia de menstruación, especialmente durante los primeros meses.</p>
+              <p>●Aumento de peso: Algunas mujeres pueden experimentar un ligero aumento de peso</p>
+                <p>●Liberación constante de hormonas: El implante libera una dosis constante de progestina, una hormona que inhibe la ovulación, espesa el moco cervical y altera el revestimiento del útero. Esta liberación constante garantiza una protección anticonceptiva muy alta.</p>
+              </div>
+         
+         
+         </div>
+
+         <div class="containerparche">
+            <div class="textoparche">
+             <h2>Sistema Intrauterino (DIU)</h2>
+               <p>El implante subdérmico es un método anticonceptivo muy eficaz y de larga duración que consiste en una pequeña varilla flexible colocada debajo de la piel del brazo</p>
+                <p>Los DIU pueden ser de cobre o hormonales, y cada tipo actúa de diferentes maneras para evitar la fecundación del óvulo.</p>
+                 <p> Además de su alta eficacia, los DIU ofrecen una serie de beneficios como su larga duración, discreción y reversibilidad. La tasa de efectividad del DIU es superior al 99%. Esto significa que menos de 1 de cada 100 mujeres que usan un DIU queda embarazada en un año. Es importante destacar que esta alta eficacia se mantiene durante todo el tiempo de uso del dispositivo, que puede variar entre 3 y 10 años según el tipo de DIU.
+                   </p>
+             </div>
+         
+            <div class="method">
+             <h3>Ventajas</h3>
+              <p>●Reversibilidad: Una vez que decidas quedar embarazada, el DIU puede ser retirado fácilmente por un profesional de la salud, y la fertilidad suele restaurarse rápidamente</p>
+              <p>●	Discreto: Una vez colocado, el DIU es completamente interno y no se nota</p>
+            </div>
+        
+              
+              <div class="method">
+                 <h3>Desventajas</h3>
+                  <p>●Cambios menstruales: Puede causar sangrados irregulares, manchado o ausencia de menstruación, especialmente durante los primeros meses.</p>
+                  <p>●Aumento de peso: Algunas mujeres pueden experimentar un ligero aumento de peso</p>
+                    <p>●Liberación constante de hormonas: El implante libera una dosis constante de progestina, una hormona que inhibe la ovulación, espesa el moco cervical y altera el revestimiento del útero. Esta liberación constante garantiza una protección anticonceptiva muy alta.</p>
+                  </div>
+             
+             
+             
+             
+             
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>
