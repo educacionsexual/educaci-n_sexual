@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado con Menú, Búsqueda y Título</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="embarazo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"></div>
+            <img src="img/LogoSample_ByTailorBrands-removebg-preview.png" alt="Logo de Educación Sexual" height="200px">
+            </div>
+            
+        </div>
+            
+           
+            <div class="menu-search-container">
+                <!-- Menú desplegable -->
+                <div class="menu-container">
+                    <button class="dropdown-btn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">INICIO</a>
+                        <a href="metodos.html">METODOS ANTICONCEPTIVOS</a>
+                        <a href="EMBARAZO.html">EMBARAZO ADOLESCENTE</a>
+                        <a href="ets.html">ETS</a>
+                        <a href="quiz.html">QUIZ</a>
+                    </div>
+                </div>
+
+                <!-- Barra de búsqueda a la derecha del menú -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+
+            <!-- Título centrado -->
+              <center> <h1 class="titulo">EDUCACIÓN SEXUAL</h1></center>
+        </div>
+    </header>
+
+    <script>
+        // Mostrar/Ocultar Menú
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        });
+
+        // Cerrar el menú si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(function(dropdown) {
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        };
+    </script>
+  
+    <div class="main-container">
+        <div class="image-container">
+            <img src="embarazoadole.webp" alt="Métodos anticonceptivos" >
+        </div>
+        <div class="text-container">
+            <h1>EMBARAZO ADOLESCENTE</h1>
+
+            <p>
+                El embarazo adolescente se define como cualquier embarazo que ocurre en una mujer menor de 19 años. Es un fenómeno complejo con múltiples causas y consecuencias, tanto para la madre adolescente como para su bebé y la sociedad en general.
+            </p>
+            <p>
+                Prevalencia en Colombia:
+                Colombia, al igual que otros países de América Latina, ha experimentado tasas relativamente altas de embarazo adolescente. Sin embargo, gracias a diversas iniciativas y políticas públicas, se han logrado algunos avances en la reducción de estas cifras.
+                
+            </p>
+           <p>Estadísticas relevantes en Colombia:
+           <p> ●	Tasa de fecundidad adolescente: Este indicador mide el número de nacimientos por cada 1,000 mujeres adolescentes de 15 a 19 años. Aunque ha disminuido en los últimos años, sigue siendo superior al promedio de otros países de la región.</p>
+           <p> ●	Consecuencias: Los embarazos adolescentes tienen un impacto significativo en la salud física y mental de las madres adolescentes, así como en sus oportunidades educativas y laborales. Además, los bebés nacidos de madres adolescentes suelen tener un mayor riesgo de bajo peso al nacer, complicaciones durante el parto y problemas de desarrollo.
+            </p>
+        </div>
+     </div>
+       
+    
+
+     <div class="main-container">
+        <div class="image-container2">
+            <img src="expe.jpg" alt="Métodos anticonceptivos"  width="500px" >
+        </div>
+        <div class="text-container">
+            <h1>Experiencia de madres adolescentes</h1>
+
+           <p> Vanessa, una joven de 18 años, vive una vida marcada por la ausencia y el rechazo de su madre. A los 15 años quedó embarazada y decidió llamar a su hijo Kylian, en honor al futbolista Kylian Mbappé. Esta decisión refleja no solo su admiración por el deportista, sino también su deseo de encontrar algo de alegría en medio de una situación difícil.
+
+            La relación de Vanessa con su madre siempre fue tensa; su mamá nunca le demostró el mismo amor que a sus otros hijos y la abandonó cuando más la necesitaba. A los 15 años, Vanessa quedó bajo el cuidado de su padre, quien trabajaba largas jornadas en un taller mecánico, dejándola sola gran parte del día. Sin la guía de su madre, Vanessa enfrentó su embarazo en soledad y con el deseo constante de llamar la atención de su mamá.
+            
+            Vanessa sueña con un futuro mejor para ella y su hijo. Planea mudarse cerca de Medellín para trabajar en una plantación de café, con la esperanza de ganar suficiente dinero para mejorar su calidad de vida y, finalmente, terminar el bachillerato estudiando por las noches. A pesar de los retos, se esfuerza por darle a Kylian una infancia diferente a la suya; dedica tiempo a enseñarle y a proporcionarle un entorno amoroso.
+            
+            Su historia es un testimonio de resistencia y determinación en medio de la adversidad, y refleja los desafíos que enfrentan muchas adolescentes en Cartagena. A pesar de las dificultades y el dolor del rechazo materno, Vanessa está decidida a romper el ciclo y ofrecerle a su hijo un futuro lleno de oportunidades.<p></p>
+           </p>
+        </div>
+     </div>
+       
+    
+
+</body>
+</html>

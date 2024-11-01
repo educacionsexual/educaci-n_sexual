@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+   
+}
+
+.carrusel-container {
+    
+    width: calc(100% - 40px); /* Margen de 10px a cada lado */
+    height: calc(100vh - 20px);
+    margin: 30px; /* Margen de 10px */
+    margin-top: 35px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgb(143, 138, 168);
+    
+    
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+   
+    
+}
+
+.carrusel-item {
+    min-width: 100%; /* Cada imagen ocupa el 100% del contenedor */
+    height: 100%;
+   
+
+}
+
+.carrusel img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+   margin-top: 50px;
+   border-radius: 70px;
+
+
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(26, 23, 23, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+.importancia h2 {
+    color: #7d4b8a;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-left: 635px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: #000000;
+}
+.introduccion-container {
+    flex-basis: 50%;
+    width: 90%;  
+    background-color: #dfbde988;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    
+}
+
+
+
+
+.introduccion-container p {
+    
+   font-size: 1.2rem;
+   color: #333;
+}
+
+
+ .title-card{
+
+    color: #7d4b8a;
+    text-shadow: #000000;
+    font-size: 2rem;
+    margin-top: 80px ;
+    margin-left: 785px;
+    font-family: 'Times New Roman', Times, serif;
+
+ }
+
+ .title-container{
+
+    background-color: #b3b3b37a;
+    margin-bottom: 0%;
+    
+    
+ }
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Esto permite que las tarjetas se alineen y se ajusten en la pantalla */
+    max-width: 2000px;
+    margin: 150px;
+  
+   
+}   
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(99, 61, 102, 0.514);
+    width: 250px; /* Ajusta el ancho para mantener consistencia */
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+   
+}
+.card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.card h2 {
+    color: #FF6F61;
+    margin: 15px 0;
+  
+}
+
+.card p {
+    color: #333;
+    font-size: 16px;
+   
+}
+.boton-card {
+    
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    text-decoration: none; /* Quita el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de letra */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+.boton:hover {
+    background-color: #e55b4e; /* Color al pasar el cursor */
+}
+
+.equipo {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #cb9ed685; /* Color de fondo similar al de la imagen */
+    margin-bottom: 15px;
+
+}
+
+.equipo h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.equipo p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.equipo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Para que las tarjetas se ajusten en pantallas pequeñas */
+    gap: 20px;
+    padding: 0 50px;
+}
+
+
+.miembro1 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 20%; /* Ajustado para 4 miembros en una fila */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.miembro1 img {
+    width: 69%;
+    height: 50%;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    margin-top: 5px;
+}
+
+.miembro1 h3 {
+    font-size: 1.5em;
+    margin-top: 35px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.miembro1 p {
+    font-size: 1em;
+    color: #666;
+    
+}
+
+.miembro {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 20%; /* Ajustado para 4 miembros en una fila */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.miembro img {
+    width: 70%;
+    height: auto;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    margin-bottom: 15px;
+}
+
+.miembro h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.miembro p {
+    font-size: 1em;
+    color: #666;
+}
+
+.miembro3 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 20%; /* Ajustado para 4 miembros en una fila */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.miembro3 img {
+    width: 53%;
+    height: 50%;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    margin-top: 5px;
+}
+
+.miembro3 h3 {
+    font-size: 1.5em;
+    margin-top: 35px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.miembro3 p {
+    font-size: 1em;
+    color: #666;
+    
+}
+
+.miembro4 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 20%; /* Ajustado para 4 miembros en una fila */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.miembro4 img {
+    width: 69%;
+    height: auto;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    margin-bottom: 15px;
+}
+
+.miembro4 h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.miembro4 p {
+    font-size: 1em;
+    color: #666;
+}
+
+.quienessomos-container{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #666;
+    margin-bottom: 80px;
+}
+
+.pie-content {
+    flex: 1;
+}
+
+footer {
+    position: relative;
+    background-color: #cb9ed685;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.wave {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('wave.svg') repeat-x;
+    background-size: contain;
+    z-index: 1;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-links, .footer-legal, .footer-copy {
+    margin-bottom: 20px;
+}
+
+.footer-links ul, .footer-legal ul {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-links ul li, .footer-legal ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a, .footer-legal ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-copy p {
+    text-align: center;
+}
+
+.footer-copy a {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}

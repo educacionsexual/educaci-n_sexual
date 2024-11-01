@@ -1,0 +1,162 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px; /* Esto asegura que el contenido no esté debajo del encabezado fijo */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #9b67bd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(54, 30, 54, 0.918);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el encabezado esté por encima del resto del contenido */
+    display: flex;
+    align-items: normal; /* Centrar verticalmente el contenido */
+    height: 50px;
+   
+}
+
+/* Contenedor del menú, buscador y título */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 0%;
+   
+}
+
+/* Contenedor que agrupa el menú y la barra de búsqueda */
+.menu-search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 50px; /* Espacio entre el menú y la barra de búsqueda */
+    margin-left: 0%;
+    
+}
+
+/* Estilos del botón de menú desplegable */
+.menu-container {
+    position: relative;
+    margin-right: 50px; /* Espacio entre el menú y la barra de búsqueda */
+   
+}
+
+.dropdown-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-btn:hover {
+    background-color: #ddd;
+}
+
+/* Estilos del contenido del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el menú desplegable cuando se aplica la clase 'show' */
+.show {
+    display: block;
+}
+
+/* Estilos de la barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-btn:hover {
+    background-color: #ddd;
+}
+
+/* Estilos del título */
+.titulo {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    flex: 1;
+    margin-right: 740px;
+    margin-left: 60px;
+    margin-top: 12px;
+    text-shadow: 3px 3px 5px rgb(108, 77, 112);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu-search-container {
+        margin-bottom: 10px;
+    }
+    
+    .titulo {
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}
+
+.logo img {
+    max-width: 40px; /* Ancho máximo del logo */
+    
+}

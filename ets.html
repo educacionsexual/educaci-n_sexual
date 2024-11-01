@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado con Menú, Búsqueda y Título</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="ets.css">
+  <style>
+    .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Estilos de las imágenes */
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            border-radius: 10px;
+            height: 500px;
+        }
+
+        /* Botones de navegación */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev-btn {
+            left: 10px;
+        }
+
+        .next-btn {
+            right: 10px;
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"></div>
+            <img src="img/LogoSample_ByTailorBrands-removebg-preview.png" alt="Logo de Educación Sexual" height="200px">
+            </div>
+            
+        </div>
+            
+           
+            <div class="menu-search-container">
+                <!-- Menú desplegable -->
+                <div class="menu-container">
+                    <button class="dropdown-btn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">INICIO</a>
+                        <a href="metodos.html">METODOS ANTICONCEPTIVOS</a>
+                        <a href="EMBARAZO.html">EMBARAZO ADOLESCENTE</a>
+                        <a href="ets.html">ETS</a>
+                        <a href="quiz.html">QUIZ</a>
+                    </div>
+                </div>
+
+                <!-- Barra de búsqueda a la derecha del menú -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+
+            <!-- Título centrado -->
+              <center> <h1 class="titulo">EDUCACIÓN SEXUAL</h1></center>
+        </div>
+    </header>
+
+    <script>
+        // Mostrar/Ocultar Menú
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        });
+
+        // Cerrar el menú si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(function(dropdown) {
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        };
+    </script>
+  
+ 
+ <div class="main-container">
+    <div class="image-container">
+        <img src="ets1.jpg" alt="200px" height="400" width="500px" >
+    </div>
+    <div class="text-container">
+        <h1>Enfermedades De Transmicion Sexual (ETS) </h1>
+        <h2> ¿Qué son las enfermedades de transmicion sexual?</h2>
+        <p>
+            Las Enfermedades de Transmisión Sexual (ETS), también conocidas como Infecciones de Transmisión Sexual (ITS),son infecciones que se transmiten principalmente a través del contacto sexual        </p>
+        <p>
+            Estas pueden ser causadas por bacterias, virus o parásitos. Es importante destacar que muchas personas con ETS no presentan síntomas, lo que dificulta su detección y tratamiento oportuno.           </p>
+        
+</div>
+ </div>
+ <div class="classification-container">
+    <h2>Tipos de ETS</h2>
+    <div class="classification">
+        <div class="method">
+            <h3>Bacterianas</h3>
+            <p>Gonorrea: Causada por la bacteria Neisseria gonorrhoeae , afecta principalmente el cuello uterino, uretra, recto y garganta. Los síntomas comunes son  secreción uretral, dolor al orinar, dolor abdominal, fiebre. Las condiciones podrían ser enfermedad inflamatoria  pélvica, infertilidad, complicaciones en el embarazo y el tratamiento son antibióticos.</p>
+             <p>Clamidia: Producida por la bacteria Chlamydia trachomatis , es una de las ETS más comunes ya menudo asintomática. Los síntomas  comunes  a  menudo asintomática, secreción vaginal, dolor abdominal, dolor al orinar,  las Condiciones  serian Enfermedad inflamatoria pélvica, infertilidad, embarazo ectópico y el tratamiento son los  antibióticos.</p>
+             <p>Sífilis: Causada por la bacteria Treponema pallidum , se manifiesta en etapas y puede causar daños graves si no se trata. Los síntomas  comunes  son ulceras genitales, sarpullido, fiebre, pérdida de peso. Las condiciones son Daño al corazón, cerebro, nervios.</p>
+           
+             <div class="carousel-container" id="carousel1">
+                <div class="carousel-slide">
+                    <img src="77.jpg" alt="Foto 1">
+                    <img src="78.jpg" alt="Foto 2">
+                    <img src="79.jpg" alt="Foto 3">
+                </div>
+                <button class="carousel-btn prev-btn" onclick="moveSlide(-1,'carousel1')">&#10094;</button>
+                <button class="carousel-btn next-btn" onclick="moveSlide(1,'carousel1')">&#10095;</button>
+            </div>
+            
+            <script>
+                let currentIndex = 0;
+            
+                function moveSlide(direction) {
+                    const slides = document.querySelector('.carousel-slide');
+                    const totalSlides = slides.children.length;
+                    
+                    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+                    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
+            </script>
+            
+            </div>
+        <div class="method">
+            <h3>Virales</h3>
+            <p>VIH (Virus de Inmunodeficiencia Humana): Debilita el sistema inmunológico y puede llevar al SIDA. Sus Síntomas comunes son Fiebre, fatiga, ganglios linfáticos inflamados, pérdida de peso  sus condiciones son daño al sistema inmunológico, SIDA y su tratamientos  es antivirales.</p>
+            <p>VPH (Virus del Papiloma Humano): Relacionado con el cáncer de cuello uterino y otras verrugas genitales . los síntomas comunes son verrugas genitales, un menudo asintomático , sus condiciones como Cáncer de cuello uterino, otros cáncer y  el Tratamiento de las verrugas, vacunación.</p>
+            <p>Herpes genital: Causado por el virus del herpes simple, produce ampollas dolorosas en los genitales. Sus síntomas son Ampollas dolorosas, fiebre, ganglios linfáticos inflamados y las condiciones como Encefalitis, meningitis .  El tratamiento es Medicamentos antivirales para aliviar los síntomas.</p>
+        
+            <div class="carousel-container" id="carousel2">
+                <div class="carousel-slide">
+                    <img src="80.jpg" alt="Nueva Foto 1">
+                    <img src="81.jpg" alt="Nueva Foto 2">
+                    <img src="82.jpg" alt="Nueva Foto 3">
+                </div>
+                <button class="carousel-btn prev-btn" onclick="moveSlide(-1, 'carousel2')">&#10094;</button>
+                <button class="carousel-btn next-btn" onclick="moveSlide(1, 'carousel2')">&#10095;</button>
+            </div>
+            
+            <script>
+                // Estado de los índices de ambos carruseles
+                let carouselIndices = {
+                    carousel1: 0,
+                    carousel2: 0
+                };
+            
+                function moveSlide(direction, carouselId) {
+                    const carouselContainer = document.getElementById(carouselId);
+                    const slides = carouselContainer.querySelector('.carousel-slide');
+                    const totalSlides = slides.children.length;
+            
+                    // Actualiza el índice del carrusel correspondiente
+                    carouselIndices[carouselId] = (carouselIndices[carouselId] + direction + totalSlides) % totalSlides;
+                    
+                    slides.style.transform = `translateX(-${carouselIndices[carouselId] * 100}%)`;
+                }
+            </script>
+            
+    </div>
+</div>
+</body>
+</html>

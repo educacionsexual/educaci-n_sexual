@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado con Menú, Búsqueda y Título</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+       
+        
+        <div class="container">
+            <div class="logo"></div>
+            <img src="img/LogoSample_ByTailorBrands-removebg-preview.png" alt="Logo de Educación Sexual" height="200px">
+            </div>
+            
+        </div>
+            
+           
+            <div class="menu-search-container">
+                <!-- Menú desplegable -->
+                <div class="menu-container">
+                    <button class="dropdown-btn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">INICIO</a>
+                        <a href="metodos.html">METODOS ANTICONCEPTIVOS</a>
+                        <a href="EMBARAZO.html">EMBARAZO ADOLESCENTE</a>
+                        <a href="ets.html">ETS</a>
+                        <a href="quiz.html">QUIZ</a>
+                    </div>
+                </div>
+
+                <!-- Barra de búsqueda a la derecha del menú -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+
+            <!-- Título centrado -->
+              <center> <h1 class="titulo">EDUCACIÓN SEXUAL</h1></center>
+        </div>
+    </header>
+
+    <script>
+        // Mostrar/Ocultar Menú
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        });
+
+        // Cerrar el menú si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(function(dropdown) {
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        };
+    </script>
+  
+
+
+</body>
+<body>
+    
+    <div class="carrusel-container">
+        
+      
+        <div class="carrusel">
+            
+            <div class="carrusel-item"><img src="carrusel1.png" alt="carrusel 1"></div>
+            
+    
+            <div class="carrusel-item"><img src="carrucel2.png" alt="carrusel 2"></div>
+            
+           
+            <div class="carrusel-item"><img src="carrucel3.png" alt="carrusel 3"></div>
+            
+    
+            <div class="carrusel-item"><img src="carrucel4.png" alt="carrusel 4"></div>
+         
+               
+        
+             
+        </div >
+                
+        <div class="boton-carrucel">
+        
+            <button class="prev" onclick="prevSlide()"></button>
+        
+     
+            <button class="next" onclick="nextSlide()"></button>
+                
+           
+        
+           
+        </div>
+
+        
+        
+            <script src="script.js"></script>        
+        
+   
+    </div>    
+
+        <div class="importancia">
+        
+             <h2><strong>Datos sobre la educación sexual integral</strong></h2>
+        
+        </div>
+
+        <div class="introduccion-container">
+          
+         
+            
+           <p class="introduccion">
+            <br><br><br> 
+            La educación sexual integral, un proceso basado en el currículo de enseñanza y 
+            aprendizaje sobre los aspectos cognitivos, emocionales, físicos y sociales de la sexualidad, que permite <br> <br>
+             a las y los jóvenes proteger y defender su salud, bienestar y dignidad proporcionándoles un necesario conjunto
+           de herramientas de conocimientos, actitudes y habilidades. Los equipa con <br> <br>
+            información precisa sobre el desarrollo humano, la sexualidad, la reproducción y las relaciones saludables que se adapta a la edad y la cultura particular. 
+            <br><br>
+           Es una condición previa para el ejercicio de la plena autonomía corporal y la toma de decisiones informadas 
+           sobre la salud y los derechos sexuales y reproductivos. Se basa en y promueve <br><br> la comprensión de los derechos 
+            humanos universales, la igualdad de género y los derechos y el empoderamiento de los jóvenes. <br>
+             
+             <br>
+             La educación sexual integral (ESI) es un método de enseñanza de la educación sexual basado en un plan de estudios cuyo objetivo es proporcionar a los alumnos los conocimientos,
+             <br><br>
+             actitudes, aptitudes y valores holísticos  
+             necesarios para tomar decisiones sanas e informadas en su vida sexual. La intención es que esta comprensión ayude a los estudiantes a entender su
+             <br><br>
+             cuerpo y sus procesos reproductivos, a
+             practicar sexo seguro reduciendo los incidentes de contraer infecciones de transmisión sexual (ITS) como el VIH y el VPH, a reducir los embarazos
+             <br><br>
+             no planificados y no deseados, así como
+             a disminuir los índices de violencia doméstica y sexual.1​
+            Los programas de educación sexual integral abarcan una amplia gama de temas
+            <br><br>
+            relacionados con la salud y los derechos sexuales y
+             reproductivos. Los planes de estudios relativos al comportamiento sexual difieren en función del público, pero suelen incluir información
+             <br><br>
+             adecuada a la edad sobre la pubertad, la
+             adolescencia, las relaciones sexuales y la edad de consentimiento. Esto incluye la promoción de comportamientos sexuales seguros, como el uso
+             <br><br>
+             correcto de métodos anticonceptivos, la
+             comunicación con la pareja y la realización de pruebas de ITS. Además, los planes de estudios de la ESI pueden tratar los resultados del embarazo,
+             <br><br>
+             como la salud materna, la crianza de los
+             hijos, la adopción y el aborto. En la actualidad, también se da importancia a la información sobre orientación sexual, identidad y expresión de género
+             <br><br>
+             y características sexuales.        
+        </p>
+
+
+        </div>
+
+
+    
+
+
+
+        <div class="title-container">
+            <h3 class="title-card"><strong>CONOCE MÁS </strong></h3>
+        </div>
+    
+        <div class="card-container" >
+            
+
+            <div class="card">
+                <img src="pestaña1.jpg" alt="EMBARAZOS ADOLESCENTES">
+                <h2>EMBARAZO ADOLESCENTE</h2>
+                 <p> Las adolescentes tienen un mayor riesgo de complicaciones graves durante el embarazo, como preeclampsia y parto prematuro, en comparación con las mujeres adultas.</p>
+                 <br><br> 
+                 <a class="boton-card" href="http://127.0.0.1:5500/educacion.html/EMBARAZO.html" target="_blank">
+                    <button><strong>HAZ CLICK AQUI</strong></button>
+                </a>
+          </div>
+
+           <div class="card">
+               <img src="card1.jpg" alt="ETS">
+               <h2> ENFERMEDADES DE TRANSMICIÓN SEXUAL</h2>
+               <p>Muchas ETS, como el VIH y la clamidia, pueden no mostrar síntomas, lo que aumenta el riesgo de transmisión si no se detectan a tiempo.</p>
+               <br>
+                <a class="boton-card" href="http://127.0.0.1:5500/educacion.html/ets.html" target="_blank">
+                <button><strong>HAZ CLICK AQUI</strong></button>
+               </a>
+            </div>
+
+           <div class="card">
+               <img src="pestaña2.avif" alt="METODOS ANTICONCEPTIVOS">
+               <h2> METODOS ANTICONCEPTIVOS</h2>
+               <p>El mal uso o inconsistencia en el uso de anticonceptivos es una de las principales razones de embarazos no planificados, incluso con acceso a ellos.
+                <br><br> <br><br>
+                <a class="boton-card" href="http://127.0.0.1:5500/educacion.html/metodos.html" target="_blank">
+                    <button><strong>HAZ CLICK AQUI</strong></button>
+                </a>
+                
+               </p>
+           </div>
+
+        </div>
+
+        <div class="equipo">
+          
+            <h2>QUIENES SOMOS</h2>
+            <p>Somos un equipo interdisciplinar que trabaja con sexualidades, sus diversidades y la coeducación en este tema.</p>
+       
+        </div>
+
+            <div class="equipo-container">
+                <div class="miembro1">
+                    <img src="nikol.jpeg" alt="Nikol García">
+                    <h3>Nikol García</h3>
+                    <p>Fundadora y directora de educacion sexual, estudiante del colegio municipal aeropuerto, encargada de la renovacion de quiz.</p>
+                </div>
+    
+                <div class="miembro">
+                    <img src="sharick.jpeg" alt="Gissel Rivera">
+                    <h3>Gissel Rivera</h3>
+                    <p>Fundadora y directora de educacion sexual, experta en sexualidad y diversidad de género, estudiante del colegio municipal aeropuerto, encargada de el diseño.</p>
+                </div>
+    
+                <div class="miembro3">
+                    <img src="karen.jpg" alt="Karen Torres">
+                    <h3>Karen Torres</h3>
+                    <p>Fundadora y directora de educacion sexual, estudiante del colegio municipal aeropuerto, encargada de la recopilación de informacion para la web.</p>
+                </div>
+    
+
+                <div class="miembro4">
+                    <img src="jhoselin.jpeg" alt="Jhoselin Barbosa">
+                    <h3>Jhoselin Barbosa</h3>
+                    <p>Fundadora y directora de educacion sexual, estudiante del colegio municipal aeropuerto, encargada de la recopilación de informacion para la web</p>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <div class="quienessomos-container">
+          
+         
+            
+            <p class="quienessomos">Somos un grupo de cuatro estudiantes comprometidas con la creación de una página web dedicada a la educación sexual, orientada principalmente hacia los adolescentes y jóvenes. Nuestro objetivo es abordar temas esenciales como los embarazos adolescentes, las enfermedades de transmisión sexual (ETS) y los métodos anticonceptivos, proporcionando información clara, accesible y basada en evidencias científicas. En un mundo donde la información abunda, pero no siempre está bien fundamentada o presentada de manera adecuada para los jóvenes, creemos que nuestra plataforma puede ser un recurso valioso para la educación y prevención.
+                <br><br>
+
+                La educación sexual es una pieza clave para el desarrollo saludable de los adolescentes, y lamentablemente, en muchos contextos, sigue siendo un tema rodeado de mitos, tabúes o simplemente ignorado. Nosotras, como estudiantes, hemos identificado la necesidad urgente de un espacio que no solo eduque, sino que lo haga de manera respetuosa y abierta, adaptada a las inquietudes de esta generación. Queremos que los adolescentes sientan que tienen acceso a la información que necesitan para tomar decisiones informadas y responsables sobre sus cuerpos y sus relaciones.
+                
+                <br><br>
+                Uno de los primeros temas que abordaremos es el de los embarazos adolescentes. Los datos muestran que este fenómeno sigue siendo un reto importante en muchos países, con consecuencias profundas tanto para las madres adolescentes como para sus hijos. Nuestro enfoque no es moralista, sino educativo. Queremos que las adolescentes comprendan las realidades y riesgos asociados con un embarazo a temprana edad, y que estén equipadas con la información necesaria para prevenirlo si así lo desean.
+                
+                <br><br>
+                Por otro lado, las enfermedades de transmisión sexual (ETS) son un problema de salud pública que, aunque común, sigue siendo ampliamente malentendido. Nuestra página brindará información sobre las ETS más prevalentes, sus síntomas, modos de transmisión y, lo más importante, cómo prevenirlas de manera eficaz. La falta de conocimiento o la desinformación sobre este tema pone en riesgo la salud de muchos jóvenes, y estamos decididas a ser parte del cambio, promoviendo el uso responsable de métodos de protección y la importancia de hacerse chequeos médicos regulares.
+                
+                <br><br>
+                Finalmente, los métodos anticonceptivos serán uno de los ejes centrales de nuestra página. Desde los métodos tradicionales hasta los más recientes, ofrecemos información detallada sobre cómo funcionan, sus tasas de efectividad y los posibles efectos secundarios. Queremos que los adolescentes y jóvenes entiendan que tienen varias opciones a su disposición para evitar embarazos no deseados y protegerse de las ETS, y que sepan cómo elegir el método que mejor se adapte a sus necesidades y estilo de vida.
+                
+                <br><br>
+                En resumen, nuestro proyecto no es solo una página web más sobre educación sexual; es una herramienta para empoderar a los adolescentes con conocimientos prácticos, fiables y respetuosos sobre sus cuerpos y su salud. Como jóvenes estudiantes, entendemos de cerca las preocupaciones y dudas que surgen en esta etapa de la vida, y estamos listas para ofrecer un recurso que guíe a nuestros compañeros y compañeras en la búsqueda de una sexualidad sana, segura y libre de prejuicios.
+         </p>
+ 
+ 
+         </div>
+
+         <div class="pie-content">
+            <!-- Contenido principal de la página -->
+        </div>
+    
+        <footer>
+            <div class="wave">
+                
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4><strong>Sexducación</strong></h4>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/educacion.html/quiz.html">Cursos Online</a></li>
+                        <li><a href="#">Consultas privadas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <ul>
+                        <li><a href="#">Aviso legal y política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="sexducacion@sexducacion.com">sexducacion@sexducacion.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copy">
+                    <p>©2024 Sexducacion. Todos los derechos reservados. Diseñado y desarrollado por <a href="#">NSKJ ♥</a></p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="face.png" alt="Facebook"></a>
+                    <a href="#"><img src="twiter.png" alt="Twitter"></a>
+                    <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+        </footer>
+ 
+
+</body>
+
+
+</html>

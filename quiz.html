@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado con Menú, Búsqueda y Título</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Contenedor que agrupa menú y barra de búsqueda -->
+            <div class="menu-search-container">
+                <!-- Menú desplegable -->
+                <div class="menu-container">
+                    <button class="dropdown-btn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">INICIO</a>
+                        <a href="metodos.html">METODOS ANTICONCEPTIVOS</a>
+                        <a href="EMBARAZO.html">EMBARAZO ADOLESCENTE</a>
+                        <a href="ets.html">ETS</a>
+                        <a href="quiz.html">QUIZ</a>
+                    </div>
+                </div>
+
+                <!-- Barra de búsqueda a la derecha del menú -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+
+            <!-- Título centrado -->
+            <h1 class="titulo">Educación Sexual</h1>
+        </div>
+    </header>
+
+    <script>
+        // Mostrar/Ocultar Menú
+        document.querySelector('.dropdown-btn').addEventListener('click', function() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        });
+
+        // Cerrar el menú si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(function(dropdown) {
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        };
+    </script>
+
+ <div  class="blocke1">
+
+    <div style="width: 100%; height: 10%;" ><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Quiz Educación Sexual" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/66fafdd19ca99a0f4fce36c9" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+ </div>
+</body>
+</html>
